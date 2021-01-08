@@ -71,14 +71,14 @@ public class Main {
 				}
 			}
 		
-//Sort flight information by fare or duration
+//Sort flight information by fare or duration, default will show both options unless user picks one
 		
 		
 			 
 			
 		input.close();
 		
-		FlightSearch flight = new FlightSearch(departureLocation);
+		FlightSearch flight = new FlightSearch(departureLocation, arrivalLocation, flightDate, flightClass);
 		
 
 	}
