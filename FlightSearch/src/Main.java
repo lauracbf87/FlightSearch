@@ -53,31 +53,6 @@ public class Main {
 			// TODO: handle exception
 			e.printStackTrace();
 		}
-	
-		
-//Flight time
-		
-		String flightTime = "";
-		System.out.println("Please enter time (hh:mm): ");
-		flightTime = input.next();
-		
-		SimpleDateFormat time = new SimpleDateFormat("HH:mm");
-		time.setLenient(false);
-		
-		while (!flightTime.matches("([01]?[0-9]|2[03]):[0-5][0-9]")) {
-			System.out.println("Please enter a valid time hh:mm");
-			flightTime = input.next();
-		}
-		
-		try {
-			Date t = time.parse(flightTime);
-			String t2 = time.format(t);
-			System.out.println(t2);
-			
-		} catch (Exception e) {
-			System.out.println("Please enter a valid time hh:mm");
-			flightTime = input.next();
-		}
 		
 //Flight class
 		char flightClass = 0;
